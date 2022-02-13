@@ -1,3 +1,37 @@
 :root{
     --red: #be1e2d;
 }
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.page-header{
+    background: var(--red);
+}
+
+.page-header > .page-header-banner{
+    background: #fff;
+    padding-bottom: 6px;
+}
+
+.header-content{
+    margin-top: 10;
+    padding: 8px 10px;
+    display: flex;
+}
+
+.nav-toggler img{
+    width: 75%;
+}
+
+.logo{
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 61%;
+}
