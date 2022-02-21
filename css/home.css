@@ -164,3 +164,118 @@ a, a:focus{
 .owl-dots > .owl-dot.active span{
     background: #be1e2d !important;
 }
+
+.promotion-banner{
+    display: flex;
+    margin-top: 10px;
+}
+
+.promotion-banner-wrapper{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.promotion-banner-wrapper:first-of-type{
+    padding-right: 2.5px;
+}
+
+.promotion-banner-wrapper:last-of-type{
+    padding-left: 2.5px;
+}
+
+.homepage-menu-cate{
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 16px 0 0;
+}
+
+.homepage-content-wrapper{
+    background: #fff;
+    border-radius: 4px;
+}
+
+.menu-cate-content{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
+}
+
+.menu-cate-content a img {
+    display: block;
+    width: 48px;
+    width: 48px;
+    margin: 0 auto 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+}
+
+.homepage-menu-cate .menu-cate-content a{
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    position: relative;
+    overflow: hidden;
+    height: 86px;
+}
+
+.influencer-slider-content{
+    border-radius: 4px;
+}
+
+.influencer-background{
+    height: 134px;
+    background: url(../img/banner/cam-on-nghe-si-ddv-t12.png) no-repeat;
+    background-size: contain;
+    width: 175px;
+    content: "";
+    display: block;
+}
+.influencer-slider-content{
+    padding: 0 4px;
+    background: url(../img/banner/influencer-content-background.jpg) no-repeat;
+}
+
+@media (max-width: 767.98px) {
+    .influencer-background{
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .influencer-slider{
+        padding: 6.9px 5px;
+        padding-left: 180px;
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 100%;
+        overflow-x: scroll;
+    }
+
+    .influencer-slider .item {
+        position: relative;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        min-width: 155px;
+        max-width: 155px;
+    }
+
+    .influencer-slider img{
+        border: 1px solid #fff;
+        display: block;
+        border-radius: 4px;
+        max-width: 155px;
+    }
+
+    .influencer-slider .item p{
+        position: absolute;
+        bottom: 1px;
+        left: 1px;
+        width: 100%;
+        padding: 6px 8px;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 4px;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+}
