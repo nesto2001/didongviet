@@ -92,7 +92,7 @@ a, a:focus{
 
 .search-btn{
     height: 100%;
-    width: 50px;
+    width: 48px;
     padding-left: 10px;
     color: rgba(0,0,0,.3);
     border: none;
@@ -194,7 +194,7 @@ a, a:focus{
     border-radius: 4px;
 }
 
-.menu-cate-content{
+.homepage-menu-cate .menu-cate-content{
     display: grid;
     grid-gap: 8px;
     grid-template-columns: 80px 80px 80px 80px 80px 80px;
@@ -235,6 +235,343 @@ a, a:focus{
 .influencer-slider-content{
     padding: 0 4px;
     background: url(../img/banner/influencer-content-background.jpg) no-repeat;
+}
+
+.homepage-content-top{
+    margin-top: 8px;
+}
+
+.homepage-content-top .homepage-content-wrapper,.flashsale-title-wrapper{
+    background: transparent;
+}
+
+.homepage-content-top .homepage-content-wrapper .slider-content{
+    background: #ae0923;
+    padding: 0 10px;
+}
+
+.homepage-content-top .homepage-content-wrapper .slider-content .products{
+    padding: 10px 0;
+}
+
+.homepage-content-top .homepage-content-wrapper .slider-content .products .product{
+    background: #fff;
+    border-radius: 5px;
+}
+
+.products{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+}
+
+.products .product{
+    scroll-snap-align: start;
+    margin-right: 5px;
+    min-width: 150px;
+    max-width: 215px;    
+    flex: 0 0 33vw;
+    overflow: hidden;
+}
+
+.products .item {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.product-item{
+    font-size: 1.4rem;
+    vertical-align: top;
+}
+
+.wrap-item{
+    padding: 10px 0;
+}
+
+.product-label{
+    display: flex;
+    height: auto;
+}
+
+.product-label span {
+    font-size: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 4px;
+    padding: 3px 0;
+}
+
+
+.product-label span.flag-installment {
+    background: #fff;
+    color: var(--red);
+    border: 1px solid #feb913;
+}
+
+.product-label span.percent-deal {
+    background: var(--red);
+    color: #fff;
+}
+
+.products .item .wrap-item .product-item-image {
+    font-size: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+.product-item-info {
+    width: auto;
+    max-width: 100%;
+}
+
+.item .label-sticker-title img, .product .label-sticker-title img, .product-item .label-sticker-title img, .product-item .label-sticker-title img {
+    max-width: 110px;
+}
+
+.product .product-item-image img {
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+
+.products .item.flash-item .wrap-item .product-name {
+    margin: 8px 0 12px;
+    height: 38px;
+    overflow: hidden;
+    display: block;
+    letter-spacing: 0.25px;
+}
+
+.products .item .wrap-item .product-name {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.products .item .box-price-product {
+    padding: 0 0 8px;
+    position: relative;
+}
+
+.products .item .box-price-product .price-box .price-container .price-wrapper .price {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: var(--red);
+}
+
+.products .item .box-price-product .price-box .price-container .price-wrapper .market-price {
+    display: block;
+    text-align: left;
+    text-decoration-line: line-through;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.4px;
+    color: #333333;
+    margin-top: 4px;
+}
+
+.products .item .box-price-product .col-installment {
+    text-align: left;
+    margin-top: 4px;
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.4px;
+    color: #828282;
+}
+
+.product .box-product-bottom .label-special-gift {
+    padding: 5px;
+    margin-top: 5px;
+    color: #333;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 0;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.special-offer-price{
+    color: var(--red);
+    font-weight: bold;
+}
+
+.product-slider{
+    margin-top: 24px;
+}
+
+.product-slider .flashsale-title-wrapper{
+    border-bottom: 1px solid #ccc;
+}
+
+.product-slider .slider-content{
+    background: #fff !important;
+}
+
+.product-slider .slider-content .products{
+    padding-top: 0 !important;
+}
+
+.product-slider .homepage-content-wrapper{
+    background: #fff;
+    padding-bottom: 16px;
+}
+
+
+.flashsale-title{
+    color: #fff !important;
+    background: #ae1f27;
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    padding-right: 15px;
+    position: relative;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+
+.product-slider .flashsale-title-wrapper{
+    background: #ae1f27 !important;
+    background-size: contain !important;
+    padding: 8px;
+}
+
+.bottom-banner-wrapper{
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.bottom-banner{
+    padding: 0 4px;
+}
+
+.homepage-bottom-banner .bottom-banner img {
+    border-radius: 4px;
+}
+
+.bottom-banner .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+    margin: 0 5px;
+}
+
+.homepage-content-middle .product-slider .homepage-content-wrapper{
+    padding-bottom: 0;
+}
+
+.homepage-content-bottom .product-slider .homepage-content-wrapper{
+    padding-bottom: 0;
+}
+
+.slider-header{
+    padding: 10px;
+    background: #ae1f27;
+    border-bottom: 1px solid #e0e0e0;
+}
+.slider-header .slider-title {
+    color: #fff;
+    background: #ae1f27;
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+.homepage-content-top .product-slider .homepage-content-wrapper .slider-content {
+    padding: 0 10px;
+}
+
+.homepage-content-middle .product-slider .homepage-content-wrapper .slider-content {
+    padding: 0 10px;
+}
+
+.sub-links{
+    margin: 8px 0px 15px 0px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.sub-links-wrap{
+    width: 589px;
+}
+
+.sub-links a:last-child {
+    margin-right: 0 !important;
+}
+
+.product-slider .sub-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    border: 0.5px solid #eee;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #333333;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.homepage-content-middle .slider-content .products{
+    padding-top: 16px !important;
+}
+
+.homepage-content-middle .slider-content .products .item .wrap-item{
+    padding-top: 0 !important;
+}
+
+.brand-menu-cate-wrapper{
+    margin: 10px;
+}
+
+.brand-menu-cate-wrapper .homepage-content-wrapper {
+    padding: 10px;
+}
+
+.brand-menu-cate-wrapper p {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 100%;
+    overflow-x: scroll;
+    margin-bottom: 0;
+}
+
+.brand-menu-cate-wrapper p a {
+    min-width: 110px;
+    margin-right: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.brand-menu-cate-wrapper p a img {
+    width: 100%;
+    height: auto;
+}
+
+.brand-menu-cate-wrapper a img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 8px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
 }
 
 @media (max-width: 767.98px) {
