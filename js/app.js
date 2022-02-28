@@ -9,3 +9,9 @@ $(document).ready(function(){
         dotsEach:1
     });
   });
+
+function cateReadMore() {
+    $(".cate-read-more").remove();
+    $(".full-text").removeClass('min-full-text');
+    return false;
+}
