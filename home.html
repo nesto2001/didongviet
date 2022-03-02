@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Di Động Việt | Điện thoại, Tablet, Lap Top, Phụ Kiện Chính Hãng</title>
     <link rel="icon" type="image/x-icon" href="img/logo/ddv-favicon.jpg" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css"/>
@@ -14,174 +14,402 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="page-header">
-        <!-- <div class="page-header-banner">
-                    <a href="">
-                        <img src="img/banner/header_mobile.png" alt="">
+        <header class="page-header">
+            <div class="container-sm p-0 pt-md-3 pb-md-2 d-md-flex">
+                <div class="header-content">
+                    <div class="nav-toggler align-items-start d-flex d-md-none">
+                        <img src="img/icon/menu-line.png" alt="" />
+                    </div>
+                    <a href="home.html" class="logo">
+                        <img src="img/logo/logo-ddv.png" alt="" />
                     </a>
-                </div> -->
-        <div class="header-content">
-          <div class="nav-toggler d-flex align-items-start">
-            <img src="img/icon/menu-line.png" alt="" />
-          </div>
-          <a href="home.html" class="logo">
-            <img src="img/logo/logo-ddv.png" alt="" />
-          </a>
-          <a class="cart" href="#">
-            <i class="bx bx-shopping-bag"></i>
-          </a>
-        </div>
-
-        <div class="searchbar-wrapper">
-          <div class="input-group searchbar">
-            <input type="text" name="search" id="" class="searchbar-input" placeholder="Bạn muốn tìm gì..." />
-            <div class="input-group-btn">
-              <button type="button" class="search-btn">
-                <i class="fas fa-search"></i>
-              </button>
+                    <a class="cart d-md-none" href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                    </a>
+                    </div>
+                    <div class="searchbar-section-wrapper d-md-flex flex-grow-1 flex-column">
+                        <div class="searchbar-wrapper">
+                            <div class="input-group searchbar">
+                                <input type="text" name="search" id="" class="searchbar-input" placeholder="Bạn muốn tìm gì..." />
+                                <div class="input-group-btn">
+                                    <button type="button" class="search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="header-custom-block d-none d-md-flex">
+                            <li><a href="https://didongviet.vn/iphone-13" target="_blank" rel="noopener">iPhone 13</a></li>
+                            <li><a href="https://didongviet.vn/samsung-galaxy-a" target="_blank" rel="noopener">Galaxy A Series</a></li>
+                            <li><a href="https://didongviet.vn/apple-watch-series-6" target="_blank" rel="noopener">Apple Watch 6</a></li>
+                            <li><a href="https://didongviet.vn/mac-m1" target="_blank" rel="noopener">MacBook M1</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-main-info col-md-4 d-none d-md-block">
+                        <div class="main-info-item info-hotline">
+                            <p class="img float-left"></p>
+                            <div class="info float-left">
+                                <a href="tel:18006018">
+                                    <p class="sub">Hotline hỗ trợ</p>
+                                    <strong class="title">1800 6018</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-info-item info-customer">
+                            <p class="img float-left"></p>
+                            <ul class="header links">
+                                <li class="authorization-link" data-label="or">
+                                    <a href="" class="customer-login-link">
+                                        Đăng nhập
+                                    </a>
+                                    /
+                                </li>
+                                <li>
+                                    <a href="" class="customer-register-link">Đăng ký</a>
+                                </li>
+                            </ul>        
+                            <p class="membership">
+                                <a class="color-white" href="https://didongviet.vn/customer/account/">
+                                    Thành Viên
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="cart d-none d-md-flex" href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                    </a>
             </div>
-          </div>
-        </div>
-        <div class="header-bottom-mobile">
-          <p>
-            <a class="mb-hd" href=""><span class="text">Điện thoại</span></a>
-            <a class="mb-hd" href=""><span class="text">Apple iPhone</span></a>
-            <a class="mb-hd" href="">Laptop &amp; Tablet</a>
-            <a class="mb-hd" href=""><span class="text">Đồng hồ</span></a>
-            <a class="mb-hd" href=""><span class="text">Phụ kiện</span></a>
-            <a class="mb-hd" href=""><span class="text">Mua trả góp</span></a>
-            <a class="mb-hd" href=""><span class="text">Trade-in thu cũ đổi mới</span></a>
-            <a class="mb-hd" href=""><span class="text">Khuyến mãi</span></a>
-            <a class="mb-hd" href=""><span class="text">Tin công nghệ</span></a>
-          </p>
-        </div>
+            <div class="header-bottom-mobile d-md-none">
+                <p>
+                    <a class="mb-hd" href=""><span class="text">Điện thoại</span></a>
+                    <a class="mb-hd" href=""><span class="text">Apple iPhone</span></a>
+                    <a class="mb-hd" href="">Laptop &amp; Tablet</a>
+                    <a class="mb-hd" href=""><span class="text">Đồng hồ</span></a>
+                    <a class="mb-hd" href=""><span class="text">Phụ kiện</span></a>
+                    <a class="mb-hd" href=""><span class="text">Mua trả góp</span></a>
+                    <a class="mb-hd" href=""><span class="text">Trade-in thu cũ đổi mới</span></a>
+                    <a class="mb-hd" href=""><span class="text">Khuyến mãi</span></a>
+                    <a class="mb-hd" href=""><span class="text">Tin công nghệ</span></a>
+                </p>
+            </div>
         </header>
+
+        <div class="nav-wrapper d-none d-md-block">
+            <div class="nav-items" role="tablist">
+                <div class="container-sm">
+                    <div class="row m-0">
+                        <div class="nav-menu-wrapper col-md-7 p-0">
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <i class="fa fa fa-mobile"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Điện Thoại</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-iphone"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Apple iPhone</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-mac"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Laptop & Tablet</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-watch"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Đồng hồ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-accessories"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Phụ kiện</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-maycu"></i>
+                                    <a href="" class="nav-item-title">
+                                        <span>Máy cũ giá rẻ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-functions-wrapper col-md-5">
+                            <a href="https://didongviet.vn/tin-tuc/khuyen-mai/" class="function menu-item-promotion float-right">
+                                <div class="wrapper">      
+                                    <span class="title font-caption">Khuyến mãi<br>Tháng 03</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/tin-tuc/" class="function hand-book float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-hand-book"></i>
+                                    <span class="title font-caption">Tin tức<br>công nghệ</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/trade-in/" class="function trade-in float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-swap"></i>
+                                    <span class="title font-caption">Thu cũ<br>đổi mới</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/mua-hang-tra-gop/" class="function installment float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-installment"></i>
+                                    <span class="title font-caption">Trả góp</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <main class="page-main">
-            <div class="promotions container mt-2">
-                <div class="promotion-slider">
-                    <div class="promotion-slider-main owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/galaxy-s-22-didongviet-768x371.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/768x371-uag_1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/iphone13_promax_main.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/mac-768x371_1.png" alt="">
-                            </a>
-                        </div>                        
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/768x371-aukey.png" alt="">
-                            </a>
-                        </div>                                              
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/768x371_op-lung-apple.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/redmi-note-11-didongviet.jpg" alt="">
-                            </a>
-                        </div> 
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/ipad_update.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/acer-768x371.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <img src="img/banner/768x371_4__4.png" alt="">
-                            </a>
+            <div class="promotions container mt-2 p-md-0">
+                <div class="home-promotion-wrapper d-md-flex mt-md-3">
+                    <div class="home-trend d-none d-md-block">
+                        <div id="group-trend">
+                            <div class="trend-title">
+                                <div class="trend-title-image"></div>
+                            </div>
+                            <div class="trend-body">
+                                <div class="inner trend-owl">
+                                    <div class="trend-item trend-item-0">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/iphone-13" title="iPhone 13 Series">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #1                                
+                                                        </div>
+                                                        <div class="trend-info">
+                                                            <h3>iPhone 13 Series</h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Đẹp tinh tế. Giá hấp dẫn</p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trend-item trend-item-1">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/samsung-galaxy-s22" title="Galaxy S22 Series">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #2                                </div>
+                                                        <div class="trend-info">
+                                                            <h3>Galaxy S22 Series</h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Đặt Gạch. Nhiều  Ưu Đãi. </p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item trend-item-2">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/macbook-air-13-256gb-2020-chip-arm" title="MacBook Air M1">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #3                                </div>
+                                                        <div class="trend-info">
+                                                            <h3>MacBook Air M1</h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Siêu nhẹ. Giá rẻ nhất</p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item trend-item-3">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/samsung-galaxy-tab-a8-2022.html" title="Galaxy Tab A8 ">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #4                                </div>
+                                                        <div class="trend-info">
+                                                            <h3>Galaxy Tab A8 </h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Nhỏ gọn. Giá tốt</p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item trend-item-4">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/airpods-pro-2021.html" title="AirPods Pro 2021">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #5                                </div>
+                                                        <div class="trend-info">
+                                                            <h3>AirPods Pro 2021</h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Chống ồn. Giá hấp dẫn</p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="trend-item trend-item-5">
+                                        <div class="trend-box">
+                                            <a target="_blank" href="https://didongviet.vn/laptop-acer" title="Laptop Acer">
+                                                <div class="item-inner">
+                                                    <div class="trend-top">
+                                                        <div class="trend-pos">
+                                                            #6                                </div>
+                                                        <div class="trend-info">
+                                                            <h3>Laptop Acer</h3>
+                                                        </div>
+                                                    </div>
+                                                    <p>Cấu hình mạnh. Giá tốt</p> 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="promotion-banner">
-                    <div class="promotion-banner-wrapper">
-                        <a href="">
-                            <img src="img/banner/480x248_8.png" alt="">
-                        </a>
+                    <div class="promotion-slider px-md-2">
+                        <div class="promotion-slider-main owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/galaxy-s-22-didongviet-768x371.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/768x371-uag_1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/iphone13_promax_main.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/mac-768x371_1.png" alt="">
+                                </a>
+                            </div>                        
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/768x371-aukey.png" alt="">
+                                </a>
+                            </div>                                              
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/768x371_op-lung-apple.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/redmi-note-11-didongviet.jpg" alt="">
+                                </a>
+                            </div> 
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/ipad_update.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/acer-768x371.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/banner/768x371_4__4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="promotion-banner-wrapper">
-                        <a href="">
-                            <img src="img/banner/airpods-480x248_2.png" alt="">
-                        </a>
+                    <div class="promotion-banner">
+                        <div class="item hot-deal-accessories d-none d-md-block">
+                            <a href="https://didongviet.vn/phu-kien" class="font-subtitle-2">Khuyến mãi phụ kiện hot!</a>
+                        </div>
+                        <div class="promotion-banner-wrapper">
+                            <a href="">
+                                <img src="img/banner/480x248_8.png" alt="">
+                            </a>
+                        </div>
+                        <div class="promotion-banner-wrapper">
+                            <a href="">
+                                <img src="img/banner/airpods-480x248_2.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="homepage-menu-cate homepage-content-wrapper mt-2">
+            <div class="homepage-menu-cate homepage-content-wrapper mt-2 container-md px-0">
                 <div class="menu-cate-wrapper">
-                    <div class="menu-cate-content py-3">
-                        <a href="">
-                            <img src="img/icon/icon-s-22-didongviet_1.png" alt="">
-                            Điện thoại 
-                        </a>
-                        <a href="">
-                            <img src="img/icon/iPhone_13_series.png" alt="">
-                            Apple iPhone
-                        </a>
-                        <a href="">
-                            <img src="img/icon/laptop.png" alt="">
-                            Laptop
-                        </a>
-                        <a href="">
-                            <img src="img/icon/iPad-Pro-2020.png" alt="">
-                            Apple iPad
-                        </a>
-                        <a href="">
-                            <img src="img/icon/may-cu-gia-re.png" alt="">
-                            Iphone cũ<br>giá rẻ
-                        </a>
-                        <a href="">
-                            <img src="img/icon/phu-kien-apple-80x80-didongviet.png" alt="">
-                            Phụ kiện<br>Apple
-                        </a>
-                        <a href="">
-                            <img src="img/icon/garmin.png" alt="">
-                            Đồng hồ<br>thông minh
-                        </a>
-                        <a href="">
-                            <img src="img/icon/cap-sac.png" alt="">
-                            Cáp<br>củ sạc
-                        </a>
-                        <a href="">
-                            <img src="img/icon/enginer.png" alt="">
-                            Pin dự phòng
-                        </a>
-                        <a href="">
-                            <img src="img/icon/case.png" alt="">
-                            Ốp Lưng<br>Bao Da
-                        </a>
-                        <a href="">
-                            <img src="img/icon/airpods-max.png" alt="">
-                            Tai nghe
-                        </a>
-                        <a href="">
-                            <img src="img/icon/icon-loa-nghe-nhac.png" alt="">
-                            Loa nghe<br>nhạc
-                        </a>
+                    <div class="menu-cate-content py-3 p-md-3">
+                        <div class="d-flex">
+                            <a href="">
+                                <img src="img/icon/icon-s-22-didongviet_1.png" alt="">
+                                Điện thoại 
+                            </a>
+                            <a href="">
+                                <img src="img/icon/iPhone_13_series.png" alt="">
+                                Apple iPhone
+                            </a>
+                            <a href="">
+                                <img src="img/icon/laptop.png" alt="">
+                                Laptop
+                            </a>
+                            <a href="">
+                                <img src="img/icon/iPad-Pro-2020.png" alt="">
+                                Apple iPad
+                            </a>
+                            <a href="">
+                                <img src="img/icon/may-cu-gia-re.png" alt="">
+                                Iphone cũ<br>giá rẻ
+                            </a>
+                            <a href="">
+                                <img src="img/icon/phu-kien-apple-80x80-didongviet.png" alt="">
+                                Phụ kiện<br>Apple
+                            </a>
+                            <a href="" id="menu-sw">
+                                <img src="img/icon/garmin.png" alt="">
+                                Đồng hồ<br>thông minh
+                            </a>
+                            <a href="">
+                                <img src="img/icon/cap-sac.png" alt="">
+                                Cáp<br>củ sạc
+                            </a>
+                            <a href="">
+                                <img src="img/icon/enginer.png" alt="">
+                                Pin dự phòng
+                            </a>
+                            <a href="">
+                                <img src="img/icon/case.png" alt="">
+                                Ốp Lưng<br>Bao Da
+                            </a>
+                            <a href="">
+                                <img src="img/icon/airpods-max.png" alt="">
+                                Tai nghe
+                            </a>
+                            <a href="">
+                                <img src="img/icon/icon-loa-nghe-nhac.png" alt="">
+                                Loa nghe<br>nhạc
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="homepage-influencer-slider mt-2">
+            <div class="homepage-influencer-slider mt-2 container-md px-0">
                 <div class="influencer-slider-content">
                     <div class="influencer-background"></div>
                     <div class="influencer-slider">
@@ -334,7 +562,7 @@
             </div>
 
             <div class="homepage-content-top">
-                <div class="group-featured">
+                <div class="group-featured container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="flashsale-title-wrapper">
                             <img src="img/media/PC_4.png" alt="Tết Siêu Sale - Săn Deal Giờ Vàng">
@@ -581,7 +809,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-slider">
+                <div class="product-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="flashsale-title-wrapper">
                             <a href="">
@@ -871,7 +1099,7 @@
             </div>
 
             <div class="homepage-content-middle">
-                <div class="product-slider">
+                <div class="product-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -1121,7 +1349,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand-menu-cate-wrapper">
+                <div class="brand-menu-cate-wrapper container-md px-0">
                     <div class="container p-0">
                         <div class="menu-cate-content homepage-content-wrapper">
                             <p>
@@ -1229,7 +1457,7 @@
             </div>
 
             <div class="homepage-content-bottom">
-                <div class="product-slider">
+                <div class="product-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -1479,7 +1707,7 @@
                     </div>
                 </div>
 
-                <div class="product-slider">
+                <div class="product-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -1729,7 +1957,7 @@
                     </div>
                 </div>
 
-                <div class="product-slider">
+                <div class="product-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -1980,7 +2208,7 @@
                     </div>
                 </div>
 
-                <div class="group-featured-apple">
+                <div class="group-featured-apple container-md px-0">
                     <div class="container p-0">
                         <div class="row m-0">
                             <div class="col-12 p-0">
@@ -2222,7 +2450,7 @@
                     </div>
                 </div>
 
-                <div class="product-slider accessories-slider">
+                <div class="product-slider accessories-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -2492,7 +2720,7 @@
                     </div>
                 </div>
 
-                <div class="product-slider equipment-slider">
+                <div class="product-slider equipment-slider container-md px-0">
                     <div class="homepage-content-wrapper">
                         <div class="slider-header">
                             <p class="slider-title">
@@ -3035,8 +3263,8 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
   </body>
