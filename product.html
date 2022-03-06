@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Di Động Việt | Điện thoại, Tablet, Lap Top, Phụ Kiện Chính Hãng</title>
     <link rel="icon" type="image/x-icon" href="img/logo/ddv-favicon.jpg" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css"/>
@@ -20,48 +20,159 @@
   <body class="page-category-product page-product">
     <div class="page-wrapper">
         <header class="page-header">
-        <!-- <div class="page-header-banner">
-                    <a href="">
-                        <img src="img/banner/header_mobile.png" alt="">
+            <div class="container-md p-0 pt-md-3 pb-md-2 d-md-flex">
+                <div class="header-content">
+                    <div class="nav-toggler align-items-start d-flex d-md-none">
+                        <img src="img/icon/menu-line.png" alt="" />
+                    </div>
+                    <a href="home.html" class="logo">
+                        <img src="img/logo/logo-ddv.png" alt="" />
                     </a>
-                </div> -->
-        <div class="header-content">
-          <div class="nav-toggler d-flex align-items-start">
-            <img src="img/icon/menu-line.png" alt="" />
-          </div>
-          <a href="home.html" class="logo">
-            <img src="img/logo/logo-ddv.png" alt="" />
-          </a>
-          <a class="cart" href="#">
-            <i class="bx bx-shopping-bag"></i>
-          </a>
-        </div>
-
-        <div class="searchbar-wrapper">
-          <div class="input-group searchbar">
-            <input type="text" name="search" id="" class="searchbar-input" placeholder="Bạn muốn tìm gì..." />
-            <div class="input-group-btn">
-              <button type="button" class="search-btn">
-                <i class="fas fa-search"></i>
-              </button>
+                    <a class="cart d-md-none" href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                    </a>
+                    </div>
+                    <div class="searchbar-section-wrapper d-md-flex flex-grow-1 flex-column">
+                        <div class="searchbar-wrapper">
+                            <div class="input-group searchbar">
+                                <input type="text" name="search" id="" class="searchbar-input" placeholder="Bạn muốn tìm gì..." />
+                                <div class="input-group-btn">
+                                    <button type="button" class="search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="header-custom-block d-none d-md-flex">
+                            <li><a href="" target="_blank" rel="noopener">iPhone 13</a></li>
+                            <li><a href="https://didongviet.vn/samsung-galaxy-a" target="_blank" rel="noopener">Galaxy A Series</a></li>
+                            <li><a href="https://didongviet.vn/apple-watch-series-6" target="_blank" rel="noopener">Apple Watch 6</a></li>
+                            <li><a href="https://didongviet.vn/mac-m1" target="_blank" rel="noopener">MacBook M1</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-main-info col-md-4 d-none d-md-block">
+                        <div class="main-info-item info-hotline">
+                            <p class="img float-left"></p>
+                            <div class="info float-left">
+                                <a href="tel:18006018">
+                                    <p class="sub">Hotline hỗ trợ</p>
+                                    <strong class="title">1800 6018</strong>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-info-item info-customer">
+                            <p class="img float-left"></p>
+                            <ul class="header links">
+                                <li class="authorization-link" data-label="or">
+                                    <a href="" class="customer-login-link">
+                                        Đăng nhập
+                                    </a>
+                                    /
+                                </li>
+                                <li>
+                                    <a href="" class="customer-register-link">Đăng ký</a>
+                                </li>
+                            </ul>        
+                            <p class="membership">
+                                <a class="color-white" href="https://didongviet.vn/customer/account/">
+                                    Thành Viên
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="cart d-none d-md-flex" href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                    </a>
             </div>
-          </div>
-        </div>
-        <div class="header-bottom-mobile">
-          <p>
-            <a class="mb-hd" href=""><span class="text">Điện thoại</span></a>
-            <a class="mb-hd" href=""><span class="text">Apple iPhone</span></a>
-            <a class="mb-hd" href="">Laptop &amp; Tablet</a>
-            <a class="mb-hd" href=""><span class="text">Đồng hồ</span></a>
-            <a class="mb-hd" href=""><span class="text">Phụ kiện</span></a>
-            <a class="mb-hd" href=""><span class="text">Mua trả góp</span></a>
-            <a class="mb-hd" href=""><span class="text">Trade-in thu cũ đổi mới</span></a>
-            <a class="mb-hd" href=""><span class="text">Khuyến mãi</span></a>
-            <a class="mb-hd" href=""><span class="text">Tin công nghệ</span></a>
-          </p>
-        </div>
+            <div class="header-bottom-mobile d-md-none">
+                <p>
+                    <a class="mb-hd" href=""><span class="text">Điện thoại</span></a>
+                    <a class="mb-hd" href=""><span class="text">Apple iPhone</span></a>
+                    <a class="mb-hd" href="">Laptop &amp; Tablet</a>
+                    <a class="mb-hd" href=""><span class="text">Đồng hồ</span></a>
+                    <a class="mb-hd" href=""><span class="text">Phụ kiện</span></a>
+                    <a class="mb-hd" href=""><span class="text">Mua trả góp</span></a>
+                    <a class="mb-hd" href=""><span class="text">Trade-in thu cũ đổi mới</span></a>
+                    <a class="mb-hd" href=""><span class="text">Khuyến mãi</span></a>
+                    <a class="mb-hd" href=""><span class="text">Tin công nghệ</span></a>
+                </p>
+            </div>
         </header>
-        <div class="breadcrumbs">
+
+        <div class="nav-wrapper d-none d-md-block">
+            <div class="nav-items" role="tablist">
+                <div class="container-sm">
+                    <div class="row m-0">
+                        <div class="nav-menu-wrapper col-md-7 p-0">
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <i class="fa fa fa-mobile"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Điện Thoại</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-iphone"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Apple iPhone</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-mac"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Laptop & Tablet</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-watch"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Đồng hồ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-accessories"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Phụ kiện</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <i class="fa fa fa-maycu"></i>
+                                    <a href="category.html" class="nav-item-title">
+                                        <span>Máy cũ giá rẻ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-functions-wrapper col-md-5">
+                            <a href="https://didongviet.vn/tin-tuc/khuyen-mai/" class="function menu-item-promotion float-right">
+                                <div class="wrapper">      
+                                    <span class="title font-caption">Khuyến mãi<br>Tháng 03</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/tin-tuc/" class="function hand-book float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-hand-book"></i>
+                                    <span class="title font-caption">Tin tức<br>công nghệ</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/trade-in/" class="function trade-in float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-swap"></i>
+                                    <span class="title font-caption">Thu cũ<br>đổi mới</span>
+                                </div>
+                            </a>
+                            <a href="https://didongviet.vn/mua-hang-tra-gop/" class="function installment float-right">
+                                <div class="wrapper">
+                                    <i class="fa fa-installment"></i>
+                                    <span class="title font-caption">Trả góp</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs desktop-container">
             <ul class="items">
                 <li class="item">
                     <a href="home.html">Trang chủ</a>
@@ -81,8 +192,8 @@
             <div class="products-wrapper">
                 <div class="content-wrapper">
                     <div class="content main">
-                        <div class="mainproduct-content"> <!-- main-content -->
-                            <div class="mainproduct-wrapper"> <!-- main-wrapper -->
+                        <div class="mainproduct-content desktop-container"> <!-- main-content -->
+                            <div class="mainproduct-wrapper col-md-9"> <!-- main-wrapper -->
                                 <div class="mainproduct"> <!-- block-section -->
                                     <div class="product-media">
                                         <div class="fotorama" data-nav="thumbs"
@@ -246,7 +357,7 @@
                                                    </div>
                                                 </form>
                                             </div>
-                                            <div id="statistics-preorder">
+                                            <div id="statistics-preorder" class="d-md-none">
                                                 <h3>Hiện đang có 217 khách đã đăng ký</h3>
                                                 <div class="list-statistics-order">
                                                     <div class="scrollTotal">
@@ -1571,7 +1682,7 @@
                                     </div>
                                 </div> 
                             </div>
-                            <div class="mainproduct-bottom-wrapper">
+                            <div class="mainproduct-bottom-wrapper col-md-3">
                                 <div class="mainproduct">
                                     <div class="more-info">
                                         <div class="more-info-header"> 
@@ -1595,7 +1706,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mainproduct-description">
+                                <div class="mainproduct-description d-md-none">
                                     <p style="text-align: justify;">
                                         <strong>Samsung Galaxy S22 128GB</strong> bán tại Di Động Việt là phiên bản chính hãng, được phân phối từ Samsung Electronics Việt Nam, <strong>mới 100%</strong> với tình trạng nguyên seal máy, nhận bảo hành <strong>12 tháng</strong> và hưởng đầy đủ các ưu đãi theo chính sách ủy quyền của Samsung, đồng thời nhận nhiều ưu đãi, khuyến mãi hấp dẫn tại Di Động Việt.
                                     </p>
@@ -2097,8 +2208,8 @@
         </main>
         <footer class="page-footer">
             <div class="footer-content">
-                <div class="footer-top">
-                    <div class="store-system">
+                <div class="footer-top d-block d-md-flex desktop-container mt-md-4">
+                    <div class="store-system col-md-6">
                         <div class="store-system-wrapper footer-content-format">
                             <h6 class="title">Hệ thống 24 cửa hàng Di Động Việt</h6>
                             <hr>
@@ -2112,11 +2223,12 @@
                                     <div class="showroom-info">
                                         <div class="field address">
                                             <ul>
+                                                <li class="d-none d-md-list">3A Lê Thái Tổ, Quận Hoàn Kiếm, Hà Nội (Ngay ngã 4 Hàng Gai và Lê Thái Tổ)</li>
                                                 <li>16 Nguyễn An Ninh, TP. Dĩ An, Bình Dương</li>
                                                 <li>116 Thái Hà, P. Trung Liệt, Quận Đống Đa, Hà Nội</li>
                                                 <li>300 Lê Hồng Phong, P.1, Quận 10, TP.HCM (Sắp mở bán)</li>
                                                 <li>385 Quang Trung, P.10, Quận Gò Vấp, TP.HCM</li>
-                                                <li>79 Đồng Khởi, P. Bến Nghé, Quận 1, TP.HCM</li>
+                                                <li class="d-md-none">79 Đồng Khởi, P. Bến Nghé, Quận 1, TP.HCM</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -2127,19 +2239,57 @@
                         </div>
                         
                     </div>
+                    <div class="store-system col-md-6">
+                        <div class="store-system-wrapper footer-content-format">
+                            <h6 class="title">Hệ thống 11 cửa hàng SiS Mobifone - Di Động Việt</h6>
+                            <hr>
+                            <div class="content">
+                                <div class="caption">
+                                    Hệ thống liên kết theo mô hình Shop in Shop (SiS) giữa Mobifone và 
+                                    Di Động Việt. Nơi chỉ bán điện thoại Samsung, Oppo, Vsmart, Xiaomi 
+                                    với giá rẻ nhất thị trường.
+                                </div>
+                                <div class="store-system-list">
+                                    <div class="showroom-info">
+                                        <div class="field address">
+                                            <ul>
+                                                <li>80 Nguyễn Du, P. Bến Nghé, Quận 1, TP.HCM</li>
+                                                <li>291A Tô Hiến Thành, P. 13, Quận 10, TP.HCM</li>
+                                                <li>665 Hậu Giang, Phường 11, Quận 6, TP.HCM</li>
+                                                <li>122A Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, TP.HCM</li>
+                                                <li>254 Lê Văn Việt, P. Tăng Nhơn Phú A, Quận 9, TP.HCM</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="">Xem tất cả 11 cửa hàng SiS Mobifone - Di Động Việt    ></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="widget block block-static-block col-md-12">
+                        <p class="ddv-apple-thongbao">
+                            <img src="img/media/ddv-apple-chinh-thuc.png" alt="">
+                            Là đại lý ủy quyền chính thức của Apple tại Việt Nam (Apple Authorized Reseller) 
+                            từ tháng 11/2020, Di Động Việt đem đến cho quý khách hàng những trải nghiệm tuyệt 
+                            vời khi mua sắm các sản phẩm, dịch vụ của Apple với chất lượng tốt nhất cùng thái độ 
+                            phục vụ đúng chuẩn AAR
+                        </p>
+                    </div>
                 </div>
-                <div class="footer-bottom container accordion" id="accordionDDVSP" role="tablist" aria-multiselectable="true">
-                    <div class="card footer-content-format">
-                        <div class="card-header" role="tab" id="supportDDV">
-                            <div class="card-control collapsed" data-toggle="collapse" data-parent="#accordionDDVSP" data-target="#collapseSP" aria-expanded="true"
+                <div class="footer-bottom container accordion d-md-none" id="accordionDDVSP" role="tablist" aria-multiselectable="true">
+                    <div class="card accordion-item footer-content-format">
+                        <div class="accordion-header card-header" role="tab" id="supportDDV">
+                            <div class="card-control collapsed" data-bs-toggle="collapse" data-bs-parent="#accordionDDVSP" data-bs-target="#collapseSP" aria-expanded="true"
                             aria-controls="collapseSP">
                             Hỗ trợ
                             </div>
                         </div>
 
-                        <div class="collapse " id="collapseSP" role="tabpanel" aria-labelledby="supportDDV"
-                            data-parent="#accordionDDVSP">
-                            <div class="card-body">
+                        <div class="accordion-collapse collapse " id="collapseSP" role="tabpanel" aria-labelledby="supportDDV"
+                            data-bs-parent="#accordionDDVSP">
+                            <div class="card-body accordion-body">
                                 <ul>
                                     <li>
                                         <div class="agency caption">
@@ -2176,18 +2326,18 @@
                     
                 </div>
 
-                <div class="footer-bottom container accordion" id="accordionDDVPLC" role="tablist" aria-multiselectable="true">
-                    <div class="card footer-content-format">
-                        <div class="card-header" role="tab" id="policyDDV">
-                            <div class="card-control collapsed" data-toggle="collapse" data-parent="#accordionDDVPLC" data-target="#collapsePLC" aria-expanded="true"
+                <div class="footer-bottom container accordion d-md-none" id="accordionDDVPLC" role="tablist" aria-multiselectable="true">
+                    <div class="card accordion-item footer-content-format">
+                        <div class="accordion-header card-header" role="tab" id="policyDDV">
+                            <div class="card-control collapsed" data-bs-toggle="collapse" data-bs-parent="#accordionDDVPLC" data-bs-target="#collapsePLC" aria-expanded="true"
                             aria-controls="collapsePLC">
                             Chính sách
                             </div>
                         </div>
 
-                        <div class="collapse " id="collapsePLC" role="tabpanel" aria-labelledby="policyDDV"
-                            data-parent="#accordionDDVPLC">
-                            <div class="card-body">
+                        <div class="accordion-collapse collapse" id="collapsePLC" role="tabpanel" aria-labelledby="policyDDV"
+                            data-bs-parent="#accordionDDVPLC">
+                            <div class="card-body accordion-body">
                                 <ul>
                                     <li><a href="">Mua hàng trả góp</a></li>
                                     <li><a href="">Chính sách bảo hành</a></li>
@@ -2203,7 +2353,75 @@
                     
                 </div>
 
-                <div class="footer-connect-info container footer-content-format">
+                <div class="footer-middle desktop-container d-none d-md-flex mb-md-3">
+                    <div class="footer-desktop-policy col-md-8">
+                        <div class="desktop-policy-wrapper content">
+                            <div class="policy-links policy-links-left">
+                                <ul>
+                                    <li><a href="">Mua hàng trả góp</a></li>
+                                    <li><a href="">Chính sách bảo hành</a></li>
+                                    <li><a href="">Chính sách đổi trả</a></li>
+                                    <li><a href="">Chính sách bán hàng</a></li>
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                    <li><a href="">Chính sách sử dụng</a></li>
+                                    <li><a href="">Hướng dẫn mua hàng từ xa</a></li>
+                                </ul>
+                            </div>
+                            <div class="policy-links policy-links-right">
+                                <ul>
+                                    <li><a href="">Khuyến mãi tháng 02</a></li>
+                                    <li><a href="">Tin công nghệ 24h</a></li>
+                                    <li><a href="">Trade-in thu cũ lên đời</a></li>
+                                    <li><a href="">Tra cứu điểm thành viên</a></li>
+                                    <li><a href="">Phụ kiện chính hãng</a></li>
+                                    <li><a href="">Tuyển dụng mới nhất</a></li>
+                                    <li><a href="">Trung tâm bảo hành Apple tại Việt Nam</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-desktop-support col-md-4">
+                        <div class="footer-support-wrapper content">
+                            <p class="title">Hỗ trợ</p>
+                            <div class="content">
+                                <div class="support-list">
+                                    <ul>
+                                        <li>
+                                            <div class="agency">
+                                                <p>Gọi tư vấn máy - phụ kiện</p>
+                                                <span>(08:30 – 21:30)</span>
+                                            </div>
+                                            <div class="phone"><strong>1800.6018</strong></div>
+                                        </li>
+                                        <li>
+                                            <div class="agency">
+                                                <p>Khiếu nại - Góp ý</p>
+                                                <span>(08:30 – 21:30)</span>
+                                            </div>
+                                            <div class="phone"><strong>1800.6306</strong></div>
+                                        </li>
+                                        <li>
+                                            <div class="agency">
+                                                <p>Bảo hành - Hỗ trợ kỹ thuật</p>
+                                                <span>(09:00 – 21:00)</span>
+                                            </div>
+                                            <div class="phone"><strong>1800.6018</strong></div>
+                                        </li>
+                                        <li>
+                                            <div class="agency">
+                                                <p>Gọi mua hàng từ xa</p>
+                                                <span>(09:00 – 21:00)</span>
+                                            </div>
+                                            <div class="phone"><strong>1800.6018</strong></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-connect-info container footer-content-format d-md-none">
                     <div class="footer-connect-info-wrapper">
                         <div class="connect-info-wrapper">
                             <div class="connect-info social">
@@ -2221,7 +2439,7 @@
                     </div>
                 </div>
 
-                <div class="footer-payment-info container footer-content-format">
+                <div class="footer-payment-info container footer-content-format d-md-none">
                     <div class="footer-payment-info-wrapper">
                         <div class="payment-info-wrapper">
                             <div class="payment-info support">
@@ -2250,12 +2468,137 @@
                     </div>
                 </div>
 
+                <div class="footer-desktop-connect-info desktop-container d-none d-md-block my-md-3">
+                    <div class="desktop-connect-info-wrapper content d-flex align-items-center">
+                        <div class="connect-info-wrapper">
+                            <div class="connect-info social">
+                                <div class="title">
+                                    <i class='fa fa-swap'></i>
+                                    <p class="connect-info-title">Kết nối Di Động Việt</p>
+                                </div>
+                                <div class="icon d-flex justify-content-end align-items-center">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-info-wrapper">
+                            <div class="payment-info support d-flex">
+                                <div class="title">
+                                    <i class="fa fa-credit-card"></i>
+                                    <div class="connect-info-title">Hỗ trợ thanh toán</div>
+                                </div>
+                                <div class="icon d-flex align-items-center">
+                                    <i class="fa fa-visa"></i>
+                                    <i class="fa fa-mastercard"></i>
+                                </div>
+                                <div class="congthuong">
+                                    <a href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/didongvietvn-1637207046" target="_blank" rel="nofollow" title="Chung nhan Tin Nhiem Mang">
+                                        <img src="img/icon/handle_cert.png" style="width:90px;" alt="Chung nhan Tin Nhiem Mang">
+                                    </a>
+                                    <a href="https://www.dmca.com/Protection/Status.aspx?ID=5bf6fb85-07c6-4051-a9fe-1791769af978&refurl=https://didongviet.vn/" target="_blank" rel="nofollow" title="DMCA.com Protection Status" class="dmca-badge">
+                                        <img src="img/icon/dmca_protected_16_120.png" alt="DMCA.com Protection Status">
+                                    </a>
+                                    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script> 
+                                    <a target="_blank" href="http://online.gov.vn/Home/WebDetails/78543?AspxAutoDetectCookieSupport=1">
+                                        <i class="fa fa-cong-thuong"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="footer-intro container">
                     <div class="row m-0">
-                        <div class="info-content font-caption col-12">
-                            <p style="text-align: center;"><strong>Công Ty TNHH Công Nghệ và Truyền Thông VMG</strong><br>62A Trần Quang Khải, Phường Tân Định , quận 1, TPHCM.<br>Số giấy chứng nhận đăng ký kinh doanh: 0316105545, ngày cấp: 10/01/2020.</p>
-                <p style="text-align: center;">&nbsp;</p>
-                <p style="text-align: center;">Chủ sở hữu: Trần Minh Phúc - Phone: 1800.6018<br>Email: lienhe@didongviet.vn<br>Bản quyền thuộc về Di Động Việt.</p>        </div>
+                        <div class="intro-content text-center col-12">
+                            <p>
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Samsung
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Xiaomi
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại iPhone 13
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    iPad Gen 9 2021
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại iPhone
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại iPhone 12 Pro Max
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Macbook
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Samsung Galaxy Z Fold 3 5G
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Samsung Galaxy Z Flip 3 5G
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại OPPO
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Realme
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Xiaomi Mi 12
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Macbook Air M1
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Macbook Air 2020
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Samsung Galaxy Note 20
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Điện thoại Samsung Galaxy S21 Plus
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Apple Watch Series 7
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Đồng hồ Garmin
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Apple Watch Series 6
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Tai nghe Bluetooth
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Pin sạc dự phòng
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Loa Bluetooth
+                                </a> | 
+                                <a href="" target="_blank" rel="noopener">
+                                    Robot hút bụi lau nhà
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                        <div class="info-content text-center font-body-2 col-12">
+                            <p>
+                                Công Ty TNHH Công Nghệ và Truyền Thông VMG - 73 Trần Quang Khải, Phường Tân Định , quận 1, TPHCM.
+                                <br>
+                                Mã số doanh nghiệp: 0316105545, ngày cấp: 10/01/2020, nơi cấp: Sở kế hoạch và đầu tư thành phố Hồ Chí Minh 
+                                <br>
+                                MST:0316105545. 
+                                <br>
+                                Chủ sở hữu: Nguyễn Thị Kim Xuân - Điện thoại: 1800.6018 (miễn phí) - Email: lienhe@didongviet.vn - Bản quyền thuộc về Di Động Việt.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-bar">
@@ -2300,8 +2643,8 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
   </body>
