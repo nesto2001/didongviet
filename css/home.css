@@ -1566,8 +1566,6 @@ a {
     margin-bottom: 6px;
 }
 
-.fotorama__nav-wrap{
-}
 
 .fotorama .fotorama__nav--thumbs .fotorama__nav__frame {
     padding: 2px;
@@ -2207,7 +2205,6 @@ textarea {
 
 .questions .question-head .review-author {
     display: block;
-    vertical-align: middle;
     margin-left: 10px;
 }
 

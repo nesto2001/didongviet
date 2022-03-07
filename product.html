@@ -370,7 +370,7 @@
                                             <div class="list-store-inventory">
                                                 <div class="body-store">
                                                     <i class="fa fa-location-icon"></i>
-                                                    <a class="label text-red" href="#" onclick="return showMapShowroomInventory();">Hiện đang còn hàng</a>
+                                                    <a class="label text-red" href="#">Hiện đang còn hàng</a>
                                                     <span class="wait-showroom" style="display: none;">
                                                         <i class="fas fa-spinner fa-spin"></i>
                                                     </span>
@@ -540,8 +540,8 @@
                                                     <div class="mode-deposit">
                                                         <label>*Chọn hình thức đặt cọc</label>
                                                         <div class="style-radio">
-                                                            <a onclick="return pickDeposit(this);" data-deposit="at_online" href="#" class="">Đặt cọc Online</a>
-                                                            <a onclick="return pickDeposit(this);" data-deposit="at_shop" href="#" class="">Đặt cọc tại cửa hàng</a>
+                                                            <a onclick="pickDeposit(this);" data-deposit="at_online" href="#" class="">Đặt cọc Online</a>
+                                                            <a onclick="pickDeposit(this);" data-deposit="at_shop" href="#" class="">Đặt cọc tại cửa hàng</a>
                                                         </div>
                                                     </div>
                                                     <textarea class="form-control" name="note" placeholder="Ghi chú thêm..."></textarea>
@@ -2989,7 +2989,7 @@
                             </a>
                         </li>
                         <li class="bottom_fixed_item">
-                            <a href="#" onclick="return go2Top();" class="scroll-top">
+                            <a href="#" onclick="go2Top();" class="scroll-top">
                                 <i class="fa fa-arrow-up"></i>
                                 <div class="title">Top</div>
                             </a>
