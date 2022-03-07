@@ -235,3 +235,9 @@ $('.close-nav').click(function(){
     $('.close-nav').hide()
     $('html').removeClass('nav-open');
 });
+
+$('#filterMore').click(function(){
+    $('.block.filter').show();
+    $('.filter-category').show();
+    $('.filter-more').hide();
+});

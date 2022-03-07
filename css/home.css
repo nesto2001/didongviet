@@ -67,6 +67,10 @@ a, a:focus{
     width: 75%;
 }
 
+.nav-toggler{
+    cursor: pointer;
+}
+
 .logo{
     margin-left: 0px;
     display: flex;
@@ -2410,6 +2414,20 @@ textarea {
         top: -1px;
     }
     
+    .category-filter-wrapper .box-group-filter .block.filter, .category-filter-wrapper .box-group-filter .filter-category{
+        display: none;
+    }
+
+    .filter-more {
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+    }
+
+    .filter-more a {
+        display: block;
+        text-align: center;
+    }
+
     .fa.fa-shopping-bag{
         background-size: 24px 24px;
         width: 24px;
@@ -2417,7 +2435,9 @@ textarea {
         position: relative;
     }
 
-
+    .mobile-nav-toggle .nav-items-wrapper .mobile-nav-item .show-sub-menu {
+        cursor: pointer;
+    }
 
     #section-volunteer .volunteer-wrapper .volunteer-right .item {
         padding: 0 5px;
